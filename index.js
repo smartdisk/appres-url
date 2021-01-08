@@ -1,9 +1,9 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var URL = /** @class */ (function () {
+var UrlEx = /** @class */ (function () {
   
-  function URL() {
+  function UrlEx() {
   }
   
   function _isString(s) {
@@ -34,32 +34,32 @@ var URL = /** @class */ (function () {
       .replace(/\+/g, '%20'));
   }
 
-  URL.prototype.encode = function(url){
+  UrlEx.prototype.encode = function(url){
     return _encode(url);
   };
-  URL.prototype.decode = function(encoded){
+  UrlEx.prototype.decode = function(encoded){
     return _decode(encoded);
   };
 
-  URL.Url = new URL();
-  URL.encode = function(url) {
-    return this.Url.encode(url);
+  UrlEx.urlex = new UrlEx();
+  UrlEx.encode = function(url) {
+    return this.urlex.encode(url);
   };
-  URL.decode = function(encoded) {
-    return this.Url.decode(encoded);
+  UrlEx.decode = function(encoded) {
+    return this.urlex.decode(encoded);
   };
 
-  return URL;
+  return UrlEx;
 }());
 
-module.exports = URL;
-module.exports.URL = URL;
+module.exports = UrlEx;
+module.exports.UrlEx = UrlEx;
 
 /*
 // Samples
-let encoded = URL.encode("https://abc.com/123?a=value&b=value");
-let decoded1 = URL.decode("https://abc.com/123%3Fa%3Dvalue%26b%3Dvalue");
-let decoded2 = URL.decode("https%3A%2F%2Fabc.com%2F123%3Fa%3Dvalue%26b%3Dvalue");
+let encoded = UrlEx.encode("https://abc.com/123?a=value&b=value");
+let decoded1 = UrlEx.decode("https://abc.com/123%3Fa%3Dvalue%26b%3Dvalue");
+let decoded2 = UrlEx.decode("https%3A%2F%2Fabc.com%2F123%3Fa%3Dvalue%26b%3Dvalue");
 
 console.log("encoded=" + encoded);
 console.log("decoded1=" + decoded1);
