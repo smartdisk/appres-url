@@ -7,19 +7,19 @@ npm i @appres/url
 
 ## Import
 ```
-const URL = require('@appres/url');
+const UrlEx = require('@appres/url');
 
 or
 
-import { URL } from '@appres/url';
+import { UrlEx } from '@appres/url';
 
 ```
 
 ## Usage
 ```
-let encoded = URL.encode("https://abc.com/123?a=value&b=value");
-let decoded1 = URL.decode("https://abc.com/123%3Fa%3Dvalue%26b%3Dvalue");
-let decoded2 = URL.decode("https%3A%2F%2Fabc.com%2F123%3Fa%3Dvalue%26b%3Dvalue");
+let encoded = UrlEx.encode("https://abc.com/123?a=value&b=value");
+let decoded1 = UrlEx.decode("https://abc.com/123%3Fa%3Dvalue%26b%3Dvalue");
+let decoded2 = UrlEx.decode("https%3A%2F%2Fabc.com%2F123%3Fa%3Dvalue%26b%3Dvalue");
 
 console.log("encoded=" + encoded);
 console.log("decoded1=" + decoded1);
