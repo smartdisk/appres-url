@@ -1,6 +1,6 @@
 {
   "name": "@appres/url",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "URL related functions",
   "main": "index.js",
   "types": "index.d.ts",
@@ -9,6 +9,8 @@
   },
   "keywords": [
     "url",
+    "chkURL",
+    "UrlEx",
     "encode",
     "decode"
   ],
@@ -19,6 +21,5 @@
   "homepage": "https://appres.org",
   "author": "APPRES.ORG",
   "license": "MIT",
-  "dependencies": {
-  }
+  "dependencies": {}
 }

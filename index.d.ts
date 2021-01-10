@@ -5,4 +5,6 @@ export declare class UrlEx {
   encodeComp(url: string): string;  
   static decode(encoded: string): string;
   decode(encoded: string): string;  
+  static checkURL(url: any, protocol?: any = null): URL;
+  checkURL(url: any, protocol?: any = null): URL;  
 }
