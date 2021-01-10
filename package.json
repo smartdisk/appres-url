@@ -1,6 +1,6 @@
 {
   "name": "@appres/url",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "URL related functions",
   "main": "index.js",
   "types": "index.d.ts",
@@ -9,7 +9,7 @@
   },
   "keywords": [
     "url",
-    "chkURL",
+    "checkURL",
     "UrlEx",
     "encode",
     "decode"
